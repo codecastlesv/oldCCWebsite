@@ -105,8 +105,10 @@
         <div class="col-10 offset-1">
           <h2 class="align-center blue-text">Apasionados por ver crecer<br />tu negocio</h2>
           <br><br>
+
+          
 	  <?php echo $_GET["r"] == "s" ? "<div class='alert alert-success' style='text-align: center'>Tu información ha sido enviada, pronto alguien se contactará contigo</div>" : "" ?>
-          <form class="form" action="sendMail.php" method="POST" id="form">
+          <form class="form" action="registro.php" method="POST" id="form">
             <div class="row">
               <div class="col-md-6 col-sm-12">
                 <div class="form-group">
@@ -183,13 +185,15 @@
                 <div class="col-12 align-center">
                   <div class="form-group">
                     <!--input type="submit" class="btn btn-info col-4"-->
-		    <button class="g-recaptcha btn btn-info col-4" data-sitekey="6Lf697AfAAAAAOJF3Zx97JSjVTmOrk2HjpeA9jJJ" data-callback="onSubmit" data-action="submit">Enviar</Button>
+		    <button type="submit" name="enviar" id="enviar" value="Enviars">Enviar</Button>
                   </div>
                 </div>
               </div>
           </form>
         </div>
       </div>
+
+
       <br>
       <br>
       <div class="row">
