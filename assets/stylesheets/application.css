@@ -1,0 +1,36 @@
+@font-face{font-family: 'Keep Calm Med';src: url('/assets/fonts/KeepCalm-Medium.eot');src: url('/assets/fonts/KeepCalm-Medium.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/KeepCalm-Medium.woff2') format('woff2'),url('/assets/fonts/KeepCalm-Medium.woff') format('woff'),url('/assets/fonts/KeepCalm-Medium.svg#KeepCalm-Medium') format('svg');font-weight: 200;font-style: normal;}
+body{font-family: 'Keep Calm Med'}
+input{color:#339FB9;}
+.align-center{display: block;margin: 0 auto;text-align: center;}
+.background-black{background-color: #14151e}
+.background-blue{background-image: url(/assets/images/blue-bg.png);background-position: 0 0;background-size: 100%;background-repeat: no-repeat}
+.blue-text{color:#14151e;}
+.carousel-item img{display: block;vertical-align: middle}
+.footer{padding:5%; background-color:#14151e; margin-top: 10% }
+.copyright{text-align: center; color: #fff; font-size:14px;}
+.copyright a{text-align: center; color: #fff; font-size:14px;}
+.form-container{margin-top: 5%;}
+.form-control{border: 0px;border-radius: 0px;border-bottom: 1px solid #cecece;}
+.form-group{margin-top: 5%;}
+.hidden{display: none;}
+.icon-service{padding-top: 25%;text-align: center}
+.icon-service img{width: 75%;}
+.icon-service p{margin-top: 3%;}
+.intro-section{background-color: #339FB9;min-height: 600px}
+.intro-section-police{background-color: #339FB9; padding:5%;}
+.intro-text{margin: 10% 17% 0;}
+.intro-text h1{font-size: 60px;}
+.logo{width: 20%}
+.logo-policy{width: 10%; padding: 1%}
+.info-policy{padding:3%;}
+.policy p{font-size: 10px; text-align: justify;}
+.text-blue{color: #339FB9;}
+
+#customer-company-description{border: 0px;border-radius: 0px;border-bottom: 2px solid #cecece;height: 100px;resize: none;width: 100%}
+@media all and (max-width: 700px){
+  .background-blue{background-size: 150%}
+  .icon-service img{width: 40%}
+  .intro-text{margin: 5% auto;}
+  .intro-text h1{font-size: 30px;text-align: center}
+  .logo{display: block;margin: 10% auto;width: 50%}
+}
