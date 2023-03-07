@@ -108,7 +108,7 @@
 
           
 	  <?php echo $_GET["r"] == "s" ? "<div class='alert alert-success' style='text-align: center'>Tu información ha sido enviada, pronto alguien se contactará contigo</div>" : "" ?>
-          <form class="form" action="registro.php" method="POST" id="form">
+          <form class="form" action="sendmail.php" method="POST" id="form">
             <div class="row">
               <div class="col-md-6 col-sm-12">
                 <div class="form-group">
