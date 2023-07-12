@@ -20,7 +20,10 @@
     <!-- css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/application.css">
+    <link rel="stylesheet" type="text/css" href="whatsapp.css">
+    <link rel="stylesheet" type="text/css" href="fontello.css">
     <!-- scripts -->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -73,6 +76,9 @@
 	<!-- End Facebook Pixel Code -->
   </head>
   <body>
+  <a href="https://api.whatsapp.com/send?phone=50370261445&text=Muy%20Buenas%20Necesito%20ayuda%20con%20un20%proyecto" class="btn-wsp" target="_blank">
+	    <i class="fa fa-whatsapp icono"></i>
+	</a>
     <div class="container-fluid">
       <div class="row intro-section">
         <div class="col-md-6 col-sm-12 background-black">
@@ -101,97 +107,7 @@
           </div>
         </div>
       </div>
-      <div class="row form-container">
-        <div class="col-10 offset-1">
-          <h2 class="align-center blue-text">Apasionados por ver crecer<br />tu negocio</h2>
-          <br><br>
-
-          
-	  <?php echo $_GET["r"] == "s" ? "<div class='alert alert-success' style='text-align: center'>Tu información ha sido enviada, pronto alguien se contactará contigo</div>" : "" ?>
-          <form class="form" action="registro.php" method="POST" id="form">
-            <div class="row">
-              <div class="col-md-6 col-sm-12">
-                <div class="form-group">
-                  <label for="customer-name">Dínos tu nombre completo</label>
-                  <input type="text" class="form-control" id="customer-name" name="customer-name" required>
-                </div>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <div class="form-group">
-                  <label for="customer-email">Correo electrónico para enviarnos e-mails</label>
-                  <input type="text" class="form-control" id="customer-email" name="customer-email" required>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 col-sm-12">
-                <div class="form-group">
-                  <label for="customer-phone">Whatsapp para podernos comunicar contigo</label>
-                  <input type="text" class="form-control" id="customer-phone" name="customer-phone" placeholder="Opcional">
-                </div>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <div class="form-group">
-                  <label for="customer-company-description">¿En qué tipo de servicio estas interesado?</label>
-                  <select class="form-control customer-want-service" name="customer-want-service" required>
-                    <option>--Escoge una opción--</option>
-                    <option value="website">Un grandioso SITIO WEB</option>
-                    <option value="socialmedia">Quiero inicar con REDES SOCIALES o mejorar mi ESTRATEGÍA DIGITAL</option>
-                    <option value="app">Una súper APLICACIÓN MÓVIL</option>
-                    <option value="software">Un ordenado SISTEMA A LA MEDIDA</option>
-                    <option value="software">Un BOT para atender a mis clientes</option>
-                    <option value="otro">Otro tipo de servicio referente a tecnología e informática</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="form-group">
-                  <label for="customer-has-company">¿Tienes alguna empresa o emprendimiento?</label>
-                  <select class="form-control customer-has-company" name="customer-has-company" required>
-                    <option>--Escoge una opción--</option>
-                    <option value="Y">Si, y es grandioso</option>
-                    <option value="N">No, pero quiero iniciar</option>
-                  </select>
-                </div>
-              </div>              
-            </div>
-            <div class="hidden customer-company-data">
-              <div class="row">
-                <div class="col-md-6 col-sm-12">
-                  <div class="form-group">
-                    <label for="customer-company-name">Nombre de empresa o emprendimiento</label>
-                    <input type="text" class="form-control" id="customer-company-name" name="customer-company-name">
-                  </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                  <div class="form-group">
-                    <label for="customer-company-link">¿Tienes algún link donde podamos conocer más?</label>
-                    <input type="text" class="form-control" id="customer-company-link" name="customer-company-link">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <div class="form-group">
-                    <label for="customer-company-description">Cuéntanos de que trata para poderte brindar un servicio más adecuado hacia tí</label>
-                    <textarea id="customer-company-description" name="customer-company-description"></textarea>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-                <div class="col-12 align-center">
-                  <div class="form-group">
-                    <!--input type="submit" class="btn btn-info col-4"-->
-		    <button type="submit" name="enviar" id="enviar" value="Enviars">Enviar</Button>
-                  </div>
-                </div>
-              </div>
-          </form>
-        </div>
-      </div>
+      
 
 
       <br>
@@ -279,9 +195,7 @@
        document.getElementById("form").submit();
      }
     </script>
-    <!-- Start of HubSpot Embed Code -->
-      <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5369811.js"></script>
-    <!-- End of HubSpot Embed Code -->
+    
   </body>
 </html>
 
